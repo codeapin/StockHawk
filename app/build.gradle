@@ -7,7 +7,7 @@ repositories {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.udacity.stockhawk"
@@ -33,11 +33,19 @@ android {
         }
     }
 
+    buildTypes.each {
+        it.buildConfigField('String', 'QUANDL_API_KEY', QuandlApiKey)
+    }
+
     //noinspection GroovyMissingReturnStatement
     lintOptions {
         warning 'InvalidPackage'
     }
 
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 check {
@@ -50,20 +58,31 @@ check {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.3.0'
-    compile 'com.android.support:recyclerview-v7:25.3.0'
-    compile 'com.android.support:design:25.3.0'
-    compile 'com.jakewharton:butterknife:8.8.0'
+    implementation 'com.android.support:appcompat-v7:25.3.0'
+    implementation 'com.android.support:recyclerview-v7:25.3.0'
+    implementation 'com.android.support:design:25.3.0'
+    implementation 'com.jakewharton:butterknife:8.8.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.0'
 
-    compile 'com.google.guava:guava:20.0'
+    implementation 'com.google.guava:guava:20.0'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.0.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
 
-    compile 'com.jakewharton.threetenabp:threetenabp:1.0.5'
-
-    compile 'com.squareup.okhttp3:okhttp:3.8.1'
-    compile 'com.jakewharton.timber:timber:4.4.0'
-    compile 'net.sf.opencsv:opencsv:2.3'
-    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    implementation 'com.jakewharton.timber:timber:4.4.0'
+    implementation 'net.sf.opencsv:opencsv:2.3'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    //Chart
+    implementation 'com.github.blackfizz:eazegraph:1.2.2@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
 }

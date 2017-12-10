@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stock Hawk</string>
+
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+
+    <string name="pref_stocks_key">stocks</string>
+
+
+    <string name="pref_display_mode_key">Mode Tampilan</string>
+    <string name="pref_display_mode_default">@string/pref_display_mode_percentage_key</string>
+
+    <string name="pref_display_mode_absolute_key">angka</string>
+    <string name="pref_display_mode_percentage_key">persentase</string>
+
+    <string name="default_stocks_yahoo">YHOO</string>
+    <string name="default_stocks_apple">AAPL</string>
+    <string name="default_stocks_microsoft">MSFT</string>
+    <string name="default_stocks_facebook">FB</string>
+
+
+    <string name="action_change_units">@string/pref_display_mode_key</string>
+
+    <string name="dialog_title">Tambah Stock</string>
+    <string name="dialog_hint">Simbol (contoh: GOOG)</string>
+    <string name="dialog_cancel">Batal</string>
+    <string name="dialog_add">Tambah</string>
+
+    <string name="error_no_network">Tidak ada koneksi internet! Data akan di unduh saat ada koneksi internet.</string>
+    <string name="error_no_stocks">Tidak ada stock yang ditambah, tekan tambah stock untuk menambah data.</string>
+
+    <string name="toast_stock_added_no_connectivity">Simbol %s ditambahkan. Data akan di unduh saat ada koneksi internet.</string>
+    <string name="toast_no_connectivity">Data akan di unduh saat ada koneksi internet.</string>
+    <string name="content_symbol">Nama simbol</string>
+    <string name="content_history_chart">Data historis dalam diagram</string>
+    <string name="content_add_stock">Tambah stok</string>
+    <string name="content_input_symbol">Masukkan simbol</string>
+    <string name="content_item_price">Harga</string>
+    <string name="content_price_changes">Perubahan Harga</string>
+    <string name="content_stock_symbol">Simbol stok</string>
+    <string name="toast_no_connection">Tidak ada koneksi internet. Aplikasi mungkin tidak berjalan normal.</string>
+    <string name="toast_stock_unavailable">Stok %s saat ini tidak tersedia.</string>
+    <string name="toast_error_loading_data">Terjadi kesalahan saat mengambil data.</string>
+
+</resources>

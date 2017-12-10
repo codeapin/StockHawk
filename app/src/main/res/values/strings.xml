@@ -31,5 +31,15 @@
 
     <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
     <string name="toast_no_connectivity">Will refresh when network available.</string>
+    <string name="content_symbol">The symbol</string>
+    <string name="content_history_chart">Historycal data in chart</string>
+    <string name="content_add_stock">Add stock</string>
+    <string name="content_input_symbol">Input your symbol here</string>
+    <string name="content_item_price">The Price</string>
+    <string name="content_price_changes">The price changes</string>
+    <string name="content_stock_symbol">The stock symbol</string>
+    <string name="toast_no_connection">You are not connected to the Internet. The application may not working properly.</string>
+    <string name="toast_stock_unavailable">Stock %s is currently unavailable.</string>
+    <string name="toast_error_loading_data">Error on loading data.</string>
 
 </resources>
