@@ -41,5 +41,7 @@
     <string name="toast_no_connection">You are not connected to the Internet. The application may not working properly.</string>
     <string name="toast_stock_unavailable">Stock %s is currently unavailable.</string>
     <string name="toast_error_loading_data">Error on loading data.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 
 </resources>
